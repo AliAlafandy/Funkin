@@ -3,7 +3,7 @@ name: Build and Upload nightly game builds
 on:
   push:
     branches:
-      - ellawy
+      - main
   workflow_dispatch:
 
 permissions:
@@ -124,7 +124,7 @@ jobs:
       - name: Upload Android
         uses: actions/upload-artifact@v4
         with:
-          name: funkin-moon-android
+          name: Funkin-android
           path: export/release/android/**/*.apk
           if-no-files-found: error
           compression-level: 0
@@ -179,7 +179,7 @@ jobs:
       - name: Upload Windows
         uses: actions/upload-artifact@v4
         with:
-          name: funkin-moon-windows
+          name: Funkin-windows
           path: export/release/windows/bin
           if-no-files-found: error
           compression-level: 6
