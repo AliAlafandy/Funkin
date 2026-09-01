@@ -3,7 +3,7 @@ name: Build and Upload nightly game builds
 on:
   push:
     branches:
-      - main
+      - ellawy
   workflow_dispatch:
 
 permissions:
