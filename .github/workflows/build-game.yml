@@ -1,9 +1,9 @@
 name: Build and Upload nightly game builds
 
 on:
-  push:
-    branches:
-      - ellawy
+  # push:
+    # branches:
+      # - main
   workflow_dispatch:
 
 permissions:
